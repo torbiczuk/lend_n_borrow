@@ -27,6 +27,9 @@ class Rating(models.Model):
     created_date = models.DateTimeField(default=timezone.now)
     rate = models.CharField(max_length=1, choices=RATING_VALUES, default='')
 
+    class Meta:
+        abstract = True
+
 
 class BookRating(Rating):
     book = models.ForeignKey(Book, verbose_name='Książka', on_delete=models.CASCADE)
