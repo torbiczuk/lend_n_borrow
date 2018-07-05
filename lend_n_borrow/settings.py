@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '##valdz)%!abd+y^s4@$p5%81wo2s@@7@tb6-v&kgd$h_ndnsc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -122,5 +122,3 @@ try:
 except ImportError:
     print('Nie skonfigurowano pliku settings_local.py')
     pass
-
-

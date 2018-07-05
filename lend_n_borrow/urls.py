@@ -16,8 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from .routers import router
+from books.views import HomeView, LoginView, LogoutView, RegisterUserView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
+    path('home/', HomeView.as_view(), name='home'),
+    path('login/', LoginView.as_view(), name='login'),
+    path('logout/', LogoutView.as_view(), name='logout'),
+    path('register/', RegisterUserView.as_view(), name='register'),
 ]
