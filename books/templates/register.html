@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Register new user{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col s4"></div>
+        <div class="col s4">
+            <div class="card" style="margin-top: 15%">
+                <div class="card-content">
+                    <h3 class="center-align grey-text text-darken-1">Register below!</h3>
+                    <form class="" action="#" method="post">
+                        {% csrf_token %}
+                        <input type="text" name="username" placeholder="username">
+                        <input type="password" name="password" placeholder="password">
+                        <button class="waves-effect waves-light btn-large grey darken-1" style="width: 100%" type="submit" name="">
+                            <span class="">REGISTER NEW USER</span>
+                        </button>
+                        <p class="center-align grey-text text-darken-2" style="margin-top: 10px;">Back to <a href="/login">login page</a>.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col s4"></div>
+    </div>
+</div>
+{% endblock %}
