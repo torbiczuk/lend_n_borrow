@@ -1,12 +1,12 @@
-# # It's local settings definition, please don't change this file
-#
-# # 1. Copy file and rename as 'settings_local.py'
-# # 2. Set all options
-# # 3. Go to a project path, with '.git' directory
-# # 4. Type command in terminal to avoid adding local setting to repository:
-# #    echo "lend_n_borrow/settings_local.py" >> .git/info/exclude
-#
-#
+# It's local settings definition, please don't change this file
+
+# 1. Copy file and rename as 'settings_local.py'
+# 2. Set all options
+# 3. Go to a project path, with '.git' directory
+# 4. Type command in terminal to avoid adding local setting to repository:
+#    echo "lend_n_borrow/settings_local.py" >> .git/info/exclude
+
+
 DEBUG = True
 
 # Allowed hosts
